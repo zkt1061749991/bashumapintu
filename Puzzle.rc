@@ -1,0 +1,558 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Chinese (中国) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
+#pragma code_page(936)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 4, 2\r\n"
+    "#pragma code_page(936)\r\n"
+    "#endif //_WIN32\r\n"
+    "#include ""res\\Puzzle.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""l.chs\\afxres.rc""          // Standard components\r\n"
+    "#include ""l.chs\\afxprint.rc""        // printing/print preview resources\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON    DISCARDABLE     "res\\码上拼图.ico"
+IDI_ICON2               ICON    DISCARDABLE     "res\\Puzzle.ico"
+IDR_PUZZLETYPE          ICON    DISCARDABLE     "res\\PuzzleDoc.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDR_MAINFRAME           BITMAP  MOVEABLE PURE   "res\\Toolbar.bmp"
+IDB_BITMAP2             BITMAP  DISCARDABLE     "res\\海贼王.bmp"
+IDB_BITMAP3             BITMAP  DISCARDABLE     "res\\TIM图片20170707225015.bmp"
+IDB_BITMAP4             BITMAP  DISCARDABLE     "res\\TIM图片20170707225045.bmp"
+IDB_BITMAP1             BITMAP  DISCARDABLE     "res\\科比.bmp"
+IDB_BITMAP5             BITMAP  DISCARDABLE     "res\\170709185031.bmp"
+IDB_BITMAP6             BITMAP  DISCARDABLE     "res\\aiystan.bmp"
+IDB_1                   BITMAP  DISCARDABLE     "res\\4.bmp"
+IDB_2                   BITMAP  DISCARDABLE     "res\\1.bmp"
+IDB_3                   BITMAP  DISCARDABLE     "res\\2.bmp"
+IDB_4                   BITMAP  DISCARDABLE     "res\\3.bmp"
+IDB_BUTTON2             BITMAP  DISCARDABLE     "res\\button2.bmp"
+IDB_BUTTON1             BITMAP  DISCARDABLE     "res\\button1.bmp"
+IDB_BITMAP7             BITMAP  DISCARDABLE     "res\\上.bmp"
+IDB_BITMAP8             BITMAP  DISCARDABLE     "res\\下.bmp"
+IDB_BITMAP9             BITMAP  DISCARDABLE     "res\\右.bmp"
+IDB_BITMAP10            BITMAP  DISCARDABLE     "res\\左.bmp"
+IDB_BITMAP11            BITMAP  DISCARDABLE     "res\\左2.bmp"
+IDB_BITMAP12            BITMAP  DISCARDABLE     "res\\中.bmp"
+IDB_BITMAP13            BITMAP  DISCARDABLE     "res\\左1.bmp"
+IDB_BITMAP14            BITMAP  DISCARDABLE     "res\\anniu.bmp"
+IDB_BITMAP15            BITMAP  DISCARDABLE     "res\\end.bmp"
+IDB_BITMAP16            BITMAP  DISCARDABLE     "res\\bitmap16.bmp"
+IDB_BITMAP17            BITMAP  DISCARDABLE     "res\\bitmap17.bmp"
+IDB_BITMAP18            BITMAP  DISCARDABLE     "res\\说明.bmp"
+IDB_BITMAP19            BITMAP  DISCARDABLE     "res\\bitmap19.bmp"
+IDB_BITMAP20            BITMAP  DISCARDABLE     "res\\bitmap20.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Toolbar
+//
+
+IDR_MAINFRAME TOOLBAR DISCARDABLE  16, 15
+BEGIN
+    BUTTON      ID_FILE_NEW
+    BUTTON      ID_FILE_OPEN
+    BUTTON      ID_FILE_SAVE
+    SEPARATOR
+    BUTTON      ID_EDIT_CUT
+    BUTTON      ID_EDIT_COPY
+    BUTTON      ID_EDIT_PASTE
+    SEPARATOR
+    BUTTON      ID_FILE_PRINT
+    SEPARATOR
+    BUTTON      ID_APP_ABOUT
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MAINFRAME MENU PRELOAD DISCARDABLE 
+BEGIN
+    POPUP "游戏"
+    BEGIN
+        MENUITEM "随机开始",                    ID_QUICKSTART
+        MENUITEM "自动演示(仅3x3可用)",         ID_AOTUPLAYER
+        MENUITEM SEPARATOR
+        MENUITEM "退出游戏(&X)",                ID_APP_EXIT
+    END
+    POPUP "存档"
+    BEGIN
+        MENUITEM "保存(&S)\tCtrl+S",            ID_FILE_SAVE
+        MENUITEM "继续玩",                      ID_FILE_KEEP_PLAYING
+    END
+    POPUP "图片"
+    BEGIN
+        MENUITEM "选择图片...",                 ID_SELECT
+        MENUITEM "自定义...",                   ID_PIC_OPEN
+    END
+    POPUP "难度"
+    BEGIN
+        MENUITEM "简单(3x3)",                   ID_MENUITEM32776
+        MENUITEM "中等(4x4)",                   ID_MENUITEM32777
+        MENUITEM "困难(5x5)",                   ID_MENUITEM32778
+        MENUITEM SEPARATOR
+        MENUITEM "自定义...",                   ID_MENUITEM32781
+    END
+    POPUP "帮助"
+    BEGIN
+        MENUITEM "玩法说明...",                 ID_MENUITEM32771
+        MENUITEM "关于 码上拼图(&A)...",        ID_APP_ABOUT
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Accelerator
+//
+
+IDR_MAINFRAME ACCELERATORS PRELOAD MOVEABLE PURE 
+BEGIN
+    "N",            ID_FILE_NEW,            VIRTKEY, CONTROL
+    "O",            ID_FILE_OPEN,           VIRTKEY, CONTROL
+    "S",            ID_FILE_SAVE,           VIRTKEY, CONTROL
+    "P",            ID_FILE_PRINT,          VIRTKEY, CONTROL
+    "Z",            ID_EDIT_UNDO,           VIRTKEY, CONTROL
+    "X",            ID_EDIT_CUT,            VIRTKEY, CONTROL
+    "C",            ID_EDIT_COPY,           VIRTKEY, CONTROL
+    "V",            ID_EDIT_PASTE,          VIRTKEY, CONTROL
+    VK_BACK,        ID_EDIT_UNDO,           VIRTKEY, ALT
+    VK_DELETE,      ID_EDIT_CUT,            VIRTKEY, SHIFT
+    VK_INSERT,      ID_EDIT_COPY,           VIRTKEY, CONTROL
+    VK_INSERT,      ID_EDIT_PASTE,          VIRTKEY, SHIFT
+    VK_F6,          ID_NEXT_PANE,           VIRTKEY 
+    VK_F6,          ID_PREV_PANE,           VIRTKEY, SHIFT
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOG DISCARDABLE  0, 0, 232, 66
+STYLE WS_POPUP | WS_BORDER
+FONT 9, "宋体"
+BEGIN
+    ICON            IDI_ICON2,IDC_STATIC,13,20,21,21
+    LTEXT           "码上拼图  Ver.1.0 公测版",IDC_STATIC,45,13,119,8,
+                    SS_NOPREFIX
+    LTEXT           "项目组成员： 廖智勇  陈志轩  张恺庭  王鹭星",IDC_STATIC,
+                    45,29,180,13
+    DEFPUSHBUTTON   "知道了",IDOK,90,47,50,14,WS_GROUP
+END
+
+IDD_PUZZLE_FORM DIALOG DISCARDABLE  0, 0, 457, 372
+STYLE WS_CHILD
+FONT 9, "宋体"
+BEGIN
+    CTEXT           "Static",IDC_STEP,374,312,62,20
+    CTEXT           "Static",IDC_STATICTIME,373,224,62,18
+    CONTROL         "",IDC_BUTTONLOOKPIC,"Button",BS_OWNERDRAW,370,21,71,57
+    CONTROL         "",IDC_BUTTONRESTART,"Button",BS_OWNERDRAW,370,102,71,57
+    CONTROL         178,IDC_STATIC,"Static",SS_BITMAP,0,0,20,371
+    CONTROL         176,IDC_STATIC,"Static",SS_BITMAP,0,0,453,17
+    CONTROL         177,IDC_STATIC,"Static",SS_BITMAP,354,0,103,371
+    CONTROL         179,IDC_STATIC,"Static",SS_BITMAP,13,352,343,19
+END
+
+IDD_DIALOG1 DIALOG DISCARDABLE  0, 0, 187, 96
+STYLE DS_MODALFRAME | WS_POPUP
+FONT 10, "System"
+BEGIN
+    CONTROL         "",IDC_BUTTONPLAYAGAIN,"Button",BS_OWNERDRAW | 
+                    WS_TABSTOP,26,69,50,17
+    CONTROL         "",IDC_BUTTONUNPLAY,"Button",BS_OWNERDRAW | WS_TABSTOP,
+                    108,70,47,16
+    LTEXT           "",IDC_STATICEND,174,4,8,8
+    CONTROL         192,IDC_STATIC,"Static",SS_BITMAP,0,0,187,96
+    CTEXT           "Static",IDC_STATICENDTEXT,29,45,131,15
+END
+
+IDD_DIALOG2 DIALOG DISCARDABLE  0, 0, 359, 252
+STYLE WS_POPUP | WS_CAPTION
+CAPTION "选择图片"
+FONT 10, "System"
+BEGIN
+    CONTROL         "",IDCANCEL,"Button",BS_OWNERDRAW | WS_TABSTOP,147,220,
+                    64,25
+    CONTROL         "",IDC_STATICPIC1,"Static",SS_BITMAP | SS_NOTIFY | 
+                    WS_BORDER,18,14,12,12
+    CONTROL         "",IDC_STATICPIC2,"Static",SS_BITMAP | SS_NOTIFY | 
+                    WS_BORDER,247,118,12,12
+    CONTROL         "",IDC_STATICPIC3,"Static",SS_BITMAP | SS_NOTIFY | 
+                    WS_BORDER,134,118,12,12
+    CONTROL         "",IDC_STATICPIC4,"Static",SS_BITMAP | SS_NOTIFY | 
+                    WS_BORDER,134,14,12,12
+    CONTROL         "",IDC_STATICPIC5,"Static",SS_BITMAP | SS_NOTIFY | 
+                    WS_BORDER,18,118,12,12
+    CONTROL         "",IDC_STATICPIC6,"Static",SS_BITMAP | SS_NOTIFY | 
+                    WS_BORDER,247,14,12,12
+    CONTROL         186,IDC_STATIC,"Static",SS_BITMAP,0,0,18,252
+    CONTROL         187,IDC_STATIC,"Static",SS_BITMAP,226,3,21,247
+    CONTROL         188,IDC_STATIC,"Static",SS_BITMAP,1,104,356,13
+    CONTROL         189,IDC_STATIC,"Static",SS_BITMAP,110,5,24,247
+    CONTROL         185,IDC_STATIC,"Static",SS_BITMAP,337,0,22,252
+    CONTROL         183,IDC_STATIC,"Static",SS_BITMAP,0,0,359,14
+    CONTROL         184,IDC_STATIC,"Static",SS_BITMAP,0,210,359,43
+END
+
+IDD_DIALOG3 DIALOG DISCARDABLE  344, 65512, 189, 191
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "查看原图"
+FONT 10, "System"
+BEGIN
+    CONTROL         "",IDC_STATICLOOKPIC,"Static",SS_BITMAP,7,7,44,16
+END
+
+IDD_DIALOG4 DIALOG DISCARDABLE  0, 0, 132, 54
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "自定义难度"
+FONT 10, "System"
+BEGIN
+    CONTROL         "",IDOK,"Button",BS_OWNERDRAW | WS_TABSTOP,92,32,31,13
+    LTEXT           "请输入自定义阶数（10阶以内）",IDC_STATIC,27,38,53,8
+    CONTROL         198,IDC_STATIC,"Static",SS_BITMAP,0,0,132,54
+    EDITTEXT        IDC_EDIT1,11,31,63,12,ES_AUTOHSCROLL
+END
+
+IDD_DIALOG5 DIALOG DISCARDABLE  0, 0, 168, 163
+STYLE WS_POPUP | WS_CAPTION
+CAPTION "玩法说明"
+FONT 10, "System"
+BEGIN
+    CONTROL         "",IDC_BUTTONOK,"Button",BS_OWNERDRAW | WS_TABSTOP,67,
+                    134,34,16
+    CONTROL         195,IDC_STATIC,"Static",SS_BITMAP,0,0,168,162
+    LTEXT           "你好",IDC_STATICTEXT,14,7,140,122
+END
+
+
+#ifndef _MAC
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "080404b0"
+        BEGIN
+            VALUE "Comments", "\0"
+            VALUE "CompanyName", "\0"
+            VALUE "FileDescription", "Puzzle Microsoft 基础类应用程序\0"
+            VALUE "FileVersion", "1, 0, 0, 1\0"
+            VALUE "InternalName", "Puzzle\0"
+            VALUE "LegalCopyright", "版权所有 (C) 2017\0"
+            VALUE "LegalTrademarks", "\0"
+            VALUE "OriginalFilename", "Puzzle.EXE\0"
+            VALUE "PrivateBuild", "\0"
+            VALUE "ProductName", "Puzzle 应用程序\0"
+            VALUE "ProductVersion", "1, 0, 0, 1\0"
+            VALUE "SpecialBuild", "\0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x804, 1200
+    END
+END
+
+#endif    // !_MAC
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 225
+        VERTGUIDE, 45
+        VERTGUIDE, 115
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 59
+    END
+
+    IDD_PUZZLE_FORM, DIALOG
+    BEGIN
+        VERTGUIDE, 370
+        VERTGUIDE, 384
+        VERTGUIDE, 441
+        HORZGUIDE, 121
+        HORZGUIDE, 188
+    END
+
+    IDD_DIALOG2, DIALOG
+    BEGIN
+        VERTGUIDE, 18
+        VERTGUIDE, 62
+        VERTGUIDE, 134
+        VERTGUIDE, 181
+        VERTGUIDE, 247
+        VERTGUIDE, 293
+        HORZGUIDE, 14
+        HORZGUIDE, 118
+    END
+
+    IDD_DIALOG3, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 182
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 184
+    END
+
+    IDD_DIALOG4, DIALOG
+    BEGIN
+        VERTGUIDE, 13
+        VERTGUIDE, 66
+        VERTGUIDE, 117
+        HORZGUIDE, 28
+    END
+
+    IDD_DIALOG5, DIALOG
+    BEGIN
+        VERTGUIDE, 84
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// WAVE
+//
+
+IDR_WAVE1               WAVE    DISCARDABLE     "res\\01.wav"
+IDR_WAVE2               WAVE    DISCARDABLE     "res\\08_爱给网_aigei_com.wav"
+IDR_WAVE3               WAVE    DISCARDABLE     "res\\纸翻开新一页5_爱给网_aigei_com.wav"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE PRELOAD DISCARDABLE 
+BEGIN
+    IDR_MAINFRAME           "Puzzle\n\nPuzzle\n\n\nPuzzle.Document\nPuzzle Document"
+END
+
+STRINGTABLE PRELOAD DISCARDABLE 
+BEGIN
+    AFX_IDS_APP_TITLE       "Puzzle"
+    AFX_IDS_IDLEMESSAGE     "就绪"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_INDICATOR_EXT        "扩展名"
+    ID_INDICATOR_CAPS       "大写"
+    ID_INDICATOR_NUM        "数字"
+    ID_INDICATOR_SCRL       "滚动"
+    ID_INDICATOR_OVR        "改写"
+    ID_INDICATOR_REC        "记录"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_FILE_NEW             "建立新文档\n新建"
+    ID_FILE_CLOSE           "关闭活动文档\n关闭"
+    ID_FILE_SAVE            "保存活动文档\n保存"
+    ID_FILE_SAVE_AS         "将活动文档以一个新文件名保存\n另存为"
+    ID_FILE_PAGE_SETUP      "改变打印选项\n页面设置"
+    ID_FILE_PRINT_SETUP     "改变打印机及打印选项\n打印设置"
+    ID_FILE_PRINT           "打印活动文档\n打印"
+    ID_FILE_PRINT_PREVIEW   "显示整页\n打印预览"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_APP_ABOUT            "显示程序信息，版本号和版权\n关于"
+    ID_APP_EXIT             "退出应用程序；提示保存文档\n退出"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_FILE_MRU_FILE1       "打开该文档"
+    ID_FILE_MRU_FILE2       "打开该文档"
+    ID_FILE_MRU_FILE3       "打开该文档"
+    ID_FILE_MRU_FILE4       "打开该文档"
+    ID_FILE_MRU_FILE5       "打开该文档"
+    ID_FILE_MRU_FILE6       "打开该文档"
+    ID_FILE_MRU_FILE7       "打开该文档"
+    ID_FILE_MRU_FILE8       "打开该文档"
+    ID_FILE_MRU_FILE9       "打开该文档"
+    ID_FILE_MRU_FILE10      "打开该文档"
+    ID_FILE_MRU_FILE11      "打开该文档"
+    ID_FILE_MRU_FILE12      "打开该文档"
+    ID_FILE_MRU_FILE13      "打开该文档"
+    ID_FILE_MRU_FILE14      "打开该文档"
+    ID_FILE_MRU_FILE15      "打开该文档"
+    ID_FILE_MRU_FILE16      "打开该文档"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_NEXT_PANE            "切换到下一个窗格\n下一窗格"
+    ID_PREV_PANE            "切换回前一个窗格\n前一窗格"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_WINDOW_SPLIT         "将活动的窗口分隔成窗格\n分隔"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_EDIT_CLEAR           "删除被选对象\n删除"
+    ID_EDIT_CLEAR_ALL       "全部删除\n全部删除"
+    ID_EDIT_COPY            "复制被选对象并将其置于剪贴板上\n复制"
+    ID_EDIT_CUT             "剪切被选对象并将其置于剪贴板上\n剪切"
+    ID_EDIT_FIND            "查找指定的正文\n查找"
+    ID_EDIT_PASTE           "插入剪贴板内容\n粘贴"
+    ID_EDIT_REPEAT          "重复上一步操作\n重复"
+    ID_EDIT_REPLACE         "用不同的正文替换指定的正文\n替换"
+    ID_EDIT_SELECT_ALL      "选择整个文档\n选择全部"
+    ID_EDIT_UNDO            "撤消最后一步操作\n撤消"
+    ID_EDIT_REDO            "重新执行先前已撤消的操作\n重新执行"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_VIEW_TOOLBAR         "显示或隐藏工具栏\n显隐工具栏"
+    ID_VIEW_STATUS_BAR      "显示或隐藏状态栏\n显隐状态栏"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    AFX_IDS_SCSIZE          "改变窗口大小"
+    AFX_IDS_SCMOVE          "改变窗口位置"
+    AFX_IDS_SCMINIMIZE      "将窗口缩小成图标"
+    AFX_IDS_SCMAXIMIZE      "把窗口放大到最大尺寸"
+    AFX_IDS_SCNEXTWINDOW    "切换到下一个文档窗口"
+    AFX_IDS_SCPREVWINDOW    "切换到先前的文档窗口"
+    AFX_IDS_SCCLOSE         "关闭活动的窗口并提示保存所有文档"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    AFX_IDS_SCRESTORE       "把窗口恢复到正常大小"
+    AFX_IDS_SCTASKLIST      "激活任务表"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    AFX_IDS_PREVIEW_CLOSE   "关闭打印预览模式\n取消预阅"
+END
+
+#endif    // Chinese (中国) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE 4, 2
+#pragma code_page(936)
+#endif //_WIN32
+#include "res\Puzzle.rc2"  // non-Microsoft Visual C++ edited resources
+#include "l.chs\afxres.rc"          // Standard components
+#include "l.chs\afxprint.rc"        // printing/print preview resources
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

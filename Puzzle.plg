@@ -1,0 +1,38 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: Puzzle - Win32 Release--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating command line "rc.exe /l 0x804 /fo"Release/Puzzle.res" /d "NDEBUG" /d "_AFXDLL" "D:\C++工程实习\码上拼图 v1.0 公测版\Puzzle.rc"" 
+Creating temporary file "C:\Users\DELL\AppData\Local\Temp\RSP9BDF.tmp" with contents
+[
+/nologo /subsystem:windows /incremental:no /pdb:"Release/Puzzle.pdb" /machine:I386 /out:"Release/Puzzle.exe" 
+".\Release\answer.obj"
+".\Release\EndDlg.obj"
+".\Release\FreeLevelDlg.obj"
+".\Release\LookPic.obj"
+".\Release\MainFrm.obj"
+".\Release\P.obj"
+".\Release\Puzzle.obj"
+".\Release\PuzzleDoc.obj"
+".\Release\PuzzleView.obj"
+".\Release\SelectDlg.obj"
+".\Release\StdAfx.obj"
+".\Release\WaysDlg.obj"
+".\Release\Puzzle.res"
+]
+Creating command line "link.exe @C:\Users\DELL\AppData\Local\Temp\RSP9BDF.tmp"
+<h3>Output Window</h3>
+Compiling resources...
+Linking...
+
+
+
+<h3>Results</h3>
+Puzzle.exe - 0 error(s), 0 warning(s)
+</pre>
+</body>
+</html>
